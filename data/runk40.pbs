@@ -1,0 +1,18 @@
+#! /bin/bash
+
+#PBS -P Training
+#PBS -N k40ts 
+#PBS -l select=1:ncpus=12:mem=80gb:ngpus=1
+#PBS -l walltime=24:00:00
+#PBS -q defaultQ
+
+cd /project/Training/DL/
+
+module load cuda/8.0.44
+module load openmpi-gcc/3.0.0-cuda
+source mini/bin/activate DL3
+
+#python timeserieslearn.py
+python -c 'import tensorflow as tf; print(tf.__version__)'
+python ts_100k.py
+

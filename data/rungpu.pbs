@@ -1,0 +1,17 @@
+#! /bin/bash
+
+#PBS -P Training
+#PBS -N timeseries 
+#PBS -l select=1:ncpus=8:mem=16gb:ngpus=1
+#PBS -l walltime=01:00:00
+#PBS -q defaultQ
+
+
+cd /project/Training/DL/
+
+module load cuda/9.1.85
+module load openmpi-gcc/3.0.0-cuda
+source mini/bin/activate DLv100
+
+python timeserieslearn.py
+
