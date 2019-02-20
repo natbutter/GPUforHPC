@@ -12,12 +12,12 @@ Make a new text file called ```hello_world.c```
 
 void hello_world_kernel()
 {
-        printf("Hello World!\n");
+    printf("Hello World!\n");
 }
 
 int main()
 {
-        hello_world_kernel();
+    hello_world_kernel();
 }
 ```
 
@@ -38,13 +38,13 @@ Great, so it is running as expected on CPU, now lets do it on the GPU. Make a ne
 
 __global__ void hello_world_kernel()
 {
-        printf("Hello GPU World!\n");
+    printf("Hello GPU World!\n");
 }
 
 int main()
 {
-        hello_world_kernel <<<1,8>>>();
-        cudaDeviceReset();
+    hello_world_kernel <<<1,8>>>();
+    cudaDeviceReset();
 }
 ```
 

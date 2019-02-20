@@ -28,7 +28,7 @@ and the Nvidia cuda compiler (installed with the CUDA toolkit)
 
 ```nvcc release 9.0, V9.0.176```
 
-For HPC work all you need an ssh client (instructions [here](./setup.html)).
+For HPC work all you need is an ssh client (instructions [here](./setup.html)).
 
 
 ### NVIDIA Installation instructions
@@ -51,7 +51,7 @@ More info here [https://informatics.sydney.edu.au/blogs/tf_on_linux/](https://in
 
 **Mac OSX**
 
-If you have Mac product newer than about 2014 you probably don't have CUDA-capable GPU card in there. This was done for various reasons. Nevertheless, there are still drivers from NVIDA, and a few options with external GPUS. But good luck, you are on your own. For now, you can do the Artmeis examples!
+If you have Mac product newer than about 2014 you probably don't have CUDA-capable GPU card in there. This was done for various reasons. Nevertheless, there are still drivers from NVIDA, and a few options with external GPUS. But good luck, you are on your own. For now, you can do the Artemis examples!
 
 
 
@@ -67,8 +67,8 @@ Maybe, but probably not. (Not while I am teaching you anyway.) This workshop is 
 
 
 
-# What about Containers?
-Docker/singularity is great for simplifying the development environments, BUT they still require the underlying installitions of NVIDIA drivers for your specific GPU card, plus a version of CUDA that works with that combo!
+## What about Containers?
+Docker/singularity are great for simplifying the development environments, BUT they still require the underlying installitions of NVIDIA drivers for your specific GPU card, plus a version of CUDA that works with that combo!
 
 
 
